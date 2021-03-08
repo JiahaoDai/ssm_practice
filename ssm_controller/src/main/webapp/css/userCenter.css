@@ -1,0 +1,46 @@
+li{
+    list-style-type:none;
+}
+
+
+.main-wrapper{
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1200px;
+}
+
+.left-region{
+    width: 300px;
+    height: 500px;
+    float: left;
+    background-color: #0b2e13;
+}
+
+.left-region-inner{
+    padding: 10px;
+}
+
+.menu-list{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-li{
+    margin-bottom: 20px;
+}
+a{
+    color: black;
+}
+
+.right-region{
+    width: 850px;
+    height: 500px;
+    float: right;
+    background-color: #00c054;
+}
+
+
+
+
+

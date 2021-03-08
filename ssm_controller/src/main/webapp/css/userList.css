@@ -1,0 +1,66 @@
+li{
+    list-style-type: none;
+}
+
+.userBox{
+    width: 350px;
+    overflow: hidden;
+
+}
+
+.userList{
+
+}
+
+.user-single{
+    height: 80px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.user-url{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.user-logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+
+.user-info{
+    float: right;
+    height: 80px;
+    width: 200px;
+}
+
+.user-username{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+
+.user-status{
+    font-size: 14px;
+    color: red;
+    margin-top: 20px;
+}
+
+.user-fansNum{
+    float: left;
+
+}
+
+.user-starsNum{
+    float: right;
+}
+
+.wrapper{
+    position: relative;
+}
+
+
+

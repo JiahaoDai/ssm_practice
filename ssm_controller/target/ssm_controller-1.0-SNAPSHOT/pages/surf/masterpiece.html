@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/masterpiece.css">
+
+    <script>
+        function funcMsg(){
+            $("#hidden-content").css("opacity","60")
+            $("#hidden-content").css("display","block")
+        }
+
+        function exitBtn(){
+            $("#hidden-content").css("display","none")
+        }
+    </script>
+
+
+</head>
+<body>
+<div class="wrapper">
+
+
+    <div class="main-wrapper">
+        <!-- 作品简介及作者简介-->
+        <div class="work-info">
+            <div class="work-info-inner">
+                <div class="left-part">
+                    <div class="title-desc">标题</div>
+                    <p class="pubTime">
+                        13h前发布
+                    </p>
+                    <div class="work-head">
+                        <div class="left-head">
+                            <span class="head-index">分类</span>
+                        </div>
+                        <div class="right-head">
+                            <span>观看:500</span>
+                            <span>|</span>
+                            <span>评论:600</span>
+                            <span>|</span>
+                            <span>点赞:200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-part">
+                    <div class="author-img">
+                        <a href="#">
+                            <img class="author-head"
+                                 src="https://img.zcool.cn/community/01e0745d327ad2a80120695cb268f6.jpg@80w_80h_1c_1e_1o_100sh.jpg"
+                                 alt="">
+                        </a>
+                    </div>
+
+                    <div class="author-info">
+                        <p class="author-name">三毛</p>
+                        <div class="btn-area">
+                            <button class="btn btn-sm btn-default btn-1">关注</button>
+                            <button class="btn btn-sm btn-primary btn-2" onclick="funcMsg()">私信</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-content">
+            <div class="work-content-inner">
+                <p>作品内容描述:
+                    记录那些一起经过的，和仍未经过的点滴小事。
+                    春天，在漫山繁花的时候，和你牵着手，到山的深处更远更深处去。
+                    夏天，和你在海浪里留下一串彩虹色的笑声。
+                    冬天，还要继续和你继续创作属于未来的更多小恋曲，走没走过的路，去没去过的地方，留下我们的一个又一个名为「美好」的故事。
+                </p>
+            </div>
+        </div>
+        <!-- 图片展示-->
+        <!--            轮播图-->
+        <div class="Carousel-box">
+            <div class="Carousel">
+                <div class="banner">
+                    <!--                    bootstrap-->
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="banner-img"
+                                     src="https://img.zcool.cn/community/0185d35fcd25af11013fdcc7d93583.jpg@1280w_1l_2o_100sh.jpg"
+                                     alt="...">
+                            </div>
+                            <div class="item">
+                                <img class="banner-img"
+                                     src="https://img.zcool.cn/community/01246a5fc4aa1511013fdcc74ce40c.png@1380w"
+                                     alt="...">
+                            </div>
+
+                            <div class="item">
+                                <img class="banner-img"
+                                     src="https://img.zcool.cn/community/0126505fc4aade11013fdcc7a203fe.png@1380w"
+                                     alt="...">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                           data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                           data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--                广告位-->
+            <div class="advertise"></div>
+        </div>
+
+        <!--        点赞的图标-->
+        <div class="work-favor">
+            <div class="work-favor-inner">
+                <div class="favor-box">
+                    <div>
+                        <img src="../../img/favor.png" alt="">
+                    </div>
+                    <i class="incon">100</i>
+                </div>
+            </div>
+        </div>
+        <!-- 评论部分-->
+        <div class="comment-module">
+            <div class="comment-module-inner">
+                <div class="text-input">
+                    <textarea type="text" id="input-text"></textarea>
+                    <div class="btn-div">
+                        <button class="btn btn-primary btn-sm">发表评论</button>
+                    </div>
+                </div>
+
+                <div class="text-input">
+                    <div id="btn-login">
+                        <button class="btn btn-primary">登录</button>
+                    </div>
+                </div>
+
+                <div class="detail-all-comment">
+                    <div class="comment-title">全部评论   50</div>
+                    <div class="comment-list-div">
+                        <ul class="comment-list-ul">
+                            <li class="comment-list">
+                                <div class="comment-content">
+                                    <div class="comment-user">
+                                        <a href="#">
+                                            <img class="user-img" src="https://img.zcool.cn/community/0113dc5f0d691aa801206621f7e6d0.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="comment-info">
+                                        <div class="comment-user-name">
+                                            戴家豪
+                                        </div>
+                                        <div class="comment-content-words">
+                                            评论内容dsadsadsadsadsa
+                                        </div>
+                                        <div class="comment-bottom">
+                                            <span class="comment-pubTime">评论时间:hello</span>
+                                            <div class="comment-favor">
+                                                <img class="favor-img" src="../../img/favor.png" alt="">
+                                                <span>500</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment-list">
+                                <div class="comment-content">
+                                    <div class="comment-user">
+                                        <a href="#">
+                                            <img class="user-img" src="https://img.zcool.cn/community/0113dc5f0d691aa801206621f7e6d0.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="comment-info">
+                                        <div class="comment-user-name">
+                                            戴家豪
+                                        </div>
+                                        <div class="comment-content-words">
+                                            评论内容dsadsadsadsadsa
+                                        </div>
+                                        <div class="comment-bottom">
+                                            <span class="comment-pubTime">评论时间:hello</span>
+                                            <div class="comment-favor">
+                                                <img class="favor-img" src="../../img/favor.png" alt="">
+                                                <span>500</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment-list">
+                                <div class="comment-content">
+                                    <div class="comment-user">
+                                        <a href="#">
+                                            <img class="user-img" src="https://img.zcool.cn/community/0113dc5f0d691aa801206621f7e6d0.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="comment-info">
+                                        <div class="comment-user-name">
+                                            戴家豪
+                                        </div>
+                                        <div class="comment-content-words">
+                                            评论内容dsadsadsadsadsa
+                                        </div>
+                                        <div class="comment-bottom">
+                                            <span class="comment-pubTime">评论时间:hello</span>
+                                            <div class="comment-favor">
+                                                <img class="favor-img" src="../../img/favor.png" alt="">
+                                                <span>500</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment-list">
+                                <div class="comment-content">
+                                    <div class="comment-user">
+                                        <a href="#">
+                                            <img class="user-img" src="https://img.zcool.cn/community/0113dc5f0d691aa801206621f7e6d0.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="comment-info">
+                                        <div class="comment-user-name">
+                                            戴家豪
+                                        </div>
+                                        <div class="comment-content-words">
+                                            评论内容dsadsadsadsadsa
+                                        </div>
+                                        <div class="comment-bottom">
+                                            <span class="comment-pubTime">评论时间:hello</span>
+                                            <div class="comment-favor">
+                                                <img class="favor-img" src="../../img/favor.png" alt="">
+                                                <span>500</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden-content" id="hidden-content">
+            <div class="input-content">
+                <textarea name="private-msg" id="private-msg"></textarea>
+                <button class="btn btn-primary" id="sub-btn" onclick="funcMsg()">发送</button>
+                <button class="btn btn-danger" onclick="exitBtn()">退出</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+</body>
+</html>
